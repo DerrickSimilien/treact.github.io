@@ -8,14 +8,11 @@
     <script src="https://kit.fontawesome.com/35eeb04fc4.js"></script>
 </head>
 <div>
-  <div class="BodyOfSite">
-    <div>
 <body class="BodyOfPage">
     <section id="landing">
         <header class="light_Header">
-        <nav>
-            <div class="nav__container">
-               <a href="/Treact project images and stuff/Treact logo.svg" class="light_NavLinkFR"></a>
+        <nav class="light__DesktopNavLinks">
+               <a href="/Treact project images and stuff/Treact logo.svg" class="light_NavLinkFR">
          <img class="logo" src="./Treact project images and stuff/Treact logo.svg" alt="logo">
          "TReact"</a>
          <div class="light__NavLinks">
@@ -27,8 +24,10 @@
          </div>
         </div>
         </div> 
-         <button class="light__NavToggle"></button>
-         <i class ></i>
+         <button class="Navigation__Toggle">
+         <i class="fa-solid fa-bars"></i> 
+        </button>
+    <button class="light__NavToggle"></button>
         </nav> 
         <nav class="light__MobileNavLinksContainer"></nav>
         <a href="/Treact project images and stuff/Treact logo.svg" class="light__NavLink"></a>
@@ -51,35 +50,33 @@
 </div>
 </div>
     </header>
-        <header>
-            <div class="header__container">
-                <div class="header__description">
-                    <h1>Beautiful React Templates <span class="blue">for you.</span></h1>
-                    <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                </div>
-                <div>
-                   <input type="text" placeholder="Your E-mail Address">
-                   <button class="nlb--var-2"><a href="#GetStarted" ></a>Get Started</button> 
-                </div>
-                <p class="trusted__customer">OUR TRUSTED CUSTOMERS</p>
-                <figure>
-                    <img src="./Treact project images and stuff/Fortune,Fast Company, National Geographic.png" alt="">
-                </figure>
-                <figure>
-                    <img src="./Treact project images and stuff/Lady in the chair.svg" alt="">
-                </figure>
-            </div>
-        </header>
-        </div>
-    </section>
-    <div>
-    <section>
+            <div class="TwoColumnWithInput__Container">
+                <div class="TwoColumnWithInput__TwoColumn"></div>
+                    <div class="TwoColumnWithInput__LeftColumn"></div>
+                    <h1 class="TwoColumnWithInput__Heading">Beautiful React Templates <span class="blue">for you.</span></h1>
+                    <p class="TwoColumnWithInput__Paragraph">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+                    <div class="TwoColumnWithInput__Actions">
+                        <input type="text" placeholder="Your E-mail Address">
+                        <button class="nlb--var-2">Get Started</button> 
+                    </div>
+                <div class="TwoColumnWithInput__CustomersLogoStrip">
+                    <p class="trusted__customer">OUR TRUSTED CUSTOMERS</p>
+                    <img src="./Treact project images and stuff/Fortune,Fast Company, National Geographic.png" alt="Our  Customers" class="FortuneAndStuff">
+               
+    <div class="TwoColumnWithInput__RightColumn">
+        <div class="TwoColumnWithInput__IllustrationContainer"></div>
+        <img src="./Treact project images and stuff/Lady in the chair.svg" alt="Girl in chair" class="TwoColumnWithInput___StyledImg">
+    </div>
+</div>
+</div>
+</section>
+    <section class="ThreeColumnSection">
         <div class="ThreeColumnWithSideImage__Container">
             <div class="ThreeCollumnWithSideImage__ThreeColumContainer">
-               <h5><span class="blue">FEATURES</span></h5>
-               <h2>We have Amazing <span class="blue">Service.</span></h2>
+               <h5 class="ThreeColWithSideImage__Subheading"><span class="SaaSProductLandingPage__Subheading">FEATURES</span></h5>
+               <h2 class="ThreeColWithSideImage__Heading">We have Amazing <span class="SaaSProductLandingPage__HighlightedText">Service.</span></h2>
                <p class="ThreeColumnWithSideImage__Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               <div class="ThreeColumnWithSideImage__HorizontalSpacer"></div>
+               <div class="ThreeColumnWithSideImage__VerticalSpacer"></div>
                <div class="ThreeColumnWithSideImage__Column">
                 <div class="ThreeColWithSideImage__Card">
                  <span class="imageContainer"><img src="./Treact project images and stuff/shield-icon-lightning strike.svg" alt="">
@@ -131,23 +128,23 @@
     </section>
     <div>
    <section>
-   <div class="TwoColWithButton__Container">
+   <div class="TwoColWithButton__Column">
    <div class="TwoColWithButton__TwoColumn">
     <div class="TwoColWithButton__TwoColumn TwoColWithButton__ImageColumn">
         <img src="./Treact project images and stuff/Treact website image.png" class="TwoColWithButton__StyledImage" alt="">
         <div class="TwoColWithButton__TextContent">
-            <h5 class="TwoColWithButton__Subheading"><span class="QualityWork__Subtitle">Quality Work</span></h5>
-            <h2 class="TwoColWithButton__Heading">Designed & Developed by <span class="blue">Professionals.</span></h2>
+            <h5 class="TwoColWithButton__Subheading"><span class="SaaSProductLandingPage__Subheading">Quality Work</span></h5>
+            <h2 class="TwoColWithButton__Heading">Designed & Developed by <span class="TwoColWithButton___StyledSpan">Professionals.</span></h2>
             <p class="TwoColWithButton__Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="nlb--var-2"><a href="#LearnMore" ></a>Learn More</button>
+            <button class="TwoColWithButton__PrimaryButton"><a href="#LearnMore" ></a>Learn More</button>
         </div>
+    </div>
     </div>
 </div>
  </div>
 </div>
 </section>
 <div>
-<section>
   <div class="TwoColWithSteps__Container">
     <div class="TwoColWithSteps__TwoColumn">
         <div class="TwoColWithSteps__TwoColumn TwoColWithSteps__ImageColumn">
@@ -155,8 +152,8 @@
         </div>
     <div class="TwoColWithSteps__Column TwoColWithSteps__TextColumn">
         <div class="TwoColWithSteps__TextContent">
-            <h5 class="TwoColWithSteps__Subheading">STEPS</h5>
-            <h2 class="TwoColWithSteps__Heading">Easy to <span class="blue">Get Started</span></h2>
+            <h5 class="TwoColWithSteps__Subheading"><span class="SaaSProductLandingPage__Subheading">STEPS</span></h5>
+            <h2 class="TwoColWithSteps__Heading">Easy to <span class="SaaSProductLandingPage__HighlightedText">Get Started</span></h2>
             <ul class="TwoColWithSteps__Steps">
                <li class="TwoColWithStep__Step">
                 <div class="TwoColWithSteps__StepNumber">01</div>
@@ -181,7 +178,6 @@
 </div>
  </div>
 </div>
-</section>
 <div>
     <section>
         <div class="TwoColWithTwoHorizontalFeaturesAndButton__Container">
@@ -192,11 +188,11 @@
                 <div class="TwoColWithTwoHorizontalFeaturesAndButton__Column TwoColWithTwoHorizontalFeaturesAndButton__TextColumn">
                     <div class="TwoColWithTwoHorizontalFeaturesAndButton__TextContent">
                         <h5 class="TwoColWithHorizontalFeaturesAndButton__Subheading">
-                            <span class="blue">
+                            <span class="SaaSProductLandingPage__Subheading">
                             VALUES
                         </span>
                         </h5>
-                        <h2 class="TwoColWithHorizontalFeaturesAndButton__Heading">We Always Abide by Our <span class="blue">Principles.</span></h2>
+                        <h2 class="TwoColWithHorizontalFeaturesAndButton__Heading">We Always Abide by Our <span class="SaaSProductLandingPage__HighlightedText">Principles.</span></h2>
                         <p class="TwoColWithHorizontalFeaturesAndButton__Description">LoremDescription ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                          <div class="TwoColWithTwoHorizontalFeaturesAndButton__Features">
                             <div class="TwoColWithTwoHorizontalFeaturesAndButton__Feature">
@@ -227,7 +223,7 @@
                                             We assure you that our templates are designed and created by professional designers.
                                         </div>
                                     </div>
-                                    <button class="nlb--var-3"><a href="#LearnMore">Learn More</a></button>
+                                    <button><a href="#LearnMore" class="TwoColWithTwoHorizontalFeaturesAndButton__PrimaryButton">Learn More</a></button>
                                 </div>
                             </div>
                         </div>
@@ -238,10 +234,12 @@
     </section>
     <div>
         <section>
+            <div class="Random"></div>
+            <div class="Random2"></div>
             <div class="ThreePlans__HeaderContainer">
-                <h5 class="ThreePlans__Subheading"><span class="blue" class="SaaSProductLandingPage__Subheading">PRICING</span></h5>
+                <h5 class="ThreePlans__Subheading"><span class="SaaSProductLandingPage__Subheading">PRICING</span></h5>
                 <h2 class="ThreePlans__Heading">
-                    Reasonable & Flexible <span class="blue">Plans</span>.
+                    Reasonable & Flexible <span class="SaaSProductLandingPage__HighlightedText">Plans.</span>
                 </h2> 
                 <p class="ThreePlans__Description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -309,8 +307,8 @@
                     <img src="./Treact project images and stuff/Girl and boy sharing heart.svg" class="TwoColumnWithImageAndRating__Image" alt="">
                 </div>
                 <div class="TwoColumnWithImageAndRating__Column TwoColumnWithImageAndRating__TextColumn">
-                    <h5 class="blue">TESTIMONIALS</h5>
-                        <h2>Our Clients <span class="blue">Love Us.</span></h2>
+                    <h5 class="TwoColumnWithImageAndRating__Subheading"><span class="SaaSProductLandingPage__Subheading">TESTIMONIALS</span></h5>
+                        <h2 class="TwoColumnWithImageAndRating__Heading">Our Clients <span class="SaaSProductLandingPage__HighlightedText">Love Us.</span></h2>
                         <p class="TwoColumnWithImageAndRating__Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
                         <div class="TwoColumnWithImageAnRratiing__TestimonialSlider">
                             <div class="TwoColumnWithImageAndRating__StarsContainer"></div>
@@ -342,14 +340,14 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="ClassBeforeSingleCol__Column">
                 <div class="SingleCol__Column">
                     <div class="SingleCol__HeaderContent">
                         <h5 class="SingleCol__Subheading">
-                            <span class="blue">FAQs</span>
+                            <span class="SaaSProductLandingPage__Subheading">FAQs</span>
                         </h5>
                         <h2 class="SingleCol__Heading">
-                            You have any <span class="blue">Questions</span>
+                            You have <span class="SaaSProductLandingPage__HighlightedText">Questions?</span>
                         </h2>
                           <p class="SingleCol__Description">And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
                     </div>
@@ -412,15 +410,15 @@
     </div>
     <div>
         <section>
-            <div class="GetStared__StyledContainer">
-                <div class="GetStared__StyledContainer2">
+            <div class="GetStarted__StyledContainer">
+                <div class="GetStarted__StyledContainer2">
                   <div class="GetStarted__PrimaryBackgroundContainer">
                     <div class="GetStarted__Row">
                         <div class="GetStarted__ColumnContainer GetStarted__TextContainer">
                             <h5 class="GetStarted__Text">Developers all over the world are happily using Treact.</h5>
                         </div>
                         <div class="GetStarted__ColumnContainer GetStarted__LinksContainer">
-                            <button><a href="#GetStarted" class="GetSarted__Link GetStarted__PrimaryLink">Get Started</a></button>
+                            <a href="#GetStarted" class="GetSarted__Link GetStarted__PrimaryLink">Get Started</a>
                             <button><a href="#ContactUs" class="GetStarted__Link2 GetStarted__SecondaryLink">Contact Us</a></button>
                         </div>
                     </div>
@@ -436,7 +434,7 @@
     <div class="FiveColumnWithBackground__Content">
         <div class="FiveColumnWithBackground__FiveColumns">
             <div class="FiveColumnEithBackground__Column">
-                <h5 class="FiveColumnWithBackground__ColumnHeading">MAIN</h5>
+                <h5 class="FiveColumnWithBackgroundColumn__Heading">MAIN</h5>
                 <ul class="FiveColumnWithBackground__LinkList">
                     <li class="FiveColumnWithBackground__LinkListItem">
                         <a href="#Blog" class="FiveColumnWithBackground__Link">Blog</a>
