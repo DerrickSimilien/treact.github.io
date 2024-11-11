@@ -333,6 +333,31 @@ h2 {
     margin: 0px;
 }
 
+.light__PrimaryLink, .light__StyledPrimaryLink {
+
+border-radius: 9999px;
+border-bottom-width: 0px;
+--tw-bg-opacity: 1;
+background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+padding: 12px 32px;
+--tw-text-opacity: 1;
+color: rgb(247 250 252 / var(--tw-text-opacity));
+border-color: transparent;
+font-weight: 600;
+letter-spacing: 0.4px;
+transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+transition-duration: 300ms;
+}
+
+@media (min-width: 1024px) {
+.light__PrimaryLink, .light__StyledPrimaryLink {
+margin-left: 0px;
+margin-right: 0px;
+}
+}
+
+
+
 .TwoColumnWithInput__Container {
     position: relative;
 }
@@ -1957,6 +1982,8 @@ p {
  
 }
 
+
+
 .GetStarted__PrimaryBackgroundContainer {
     position: relative;
     border-radius: 8px;
@@ -1998,9 +2025,20 @@ p {
     max-width: 512px;
 }
 
+@media (min-width: 1024px) {
+    .GetStarted__ColumnContainer, .GetStarted__LinksContainer {
+        
+margin-top: 0px;
+-webkit-box-pack: end;
+justify-content: flex-end;
+
+    }
+}
+
+
 .GetSarted__Link, .GetStarted__PrimaryLink {
     margin-top: 0px;
-    background-color: rgb(245 101 101 / var(--tw-bg-opacity));
+    background: #F56565;
     --tw-text-opacity: 1;
     color: rgb(247 250 252 / var(--tw-text-opacity));
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
@@ -2019,6 +2057,25 @@ p {
     transition-duration: 300ms;
 }
 
+@media (min-width: 1024px) {
+    .GetSarted__Link, .GetStarted__PrimaryLink {
+
+      padding: 20px 40px;
+        
+    }
+}
+
+@media (min-width: 640px) {
+
+    .GetSarted__Link, .GetStarted__PrimaryLink {
+
+      margin-right: 32px;
+      width: auto;
+      font-size: 16px  
+    }
+
+}
+
 .GetStarted__Link2, .GetStarted__SecondaryLink {
     border-color: rgb(160 174 192 / var(--tw-borer-opacity));
     --tw-border-opacity: 1;
@@ -2035,6 +2092,36 @@ p {
     letter-spacing: 4px;
     transition-duration: 300ms;
 }
+
+@media (min-width: 640px) {
+
+    .GetStarted__Link2, .GetStarted__SecondaryLink: last-child {
+
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .GetStarted__Link2, .GetStarted__SecondaryLink {
+
+padding: 20px  40px
+
+    }
+
+}
+
+@media (min-width: 640px) {
+
+    .GetStarted__Link2, .GetStarted__SecondaryLink {
+
+        margin-right: 0px;
+        width: auto;
+        font-size: 16px;
+    }
+}
+
+
 
 .GetStarted__DecoratorBlobContainer {
     position: absolute;
