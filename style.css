@@ -97,7 +97,6 @@
     padding-bottom: 4px;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 4px;
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
     color: #243E63
@@ -2027,7 +2026,7 @@ p {
 
 @media (min-width: 1024px) {
     .GetStarted__ColumnContainer, .GetStarted__LinksContainer {
-        
+
 margin-top: 0px;
 -webkit-box-pack: end;
 justify-content: flex-end;
