@@ -102,13 +102,7 @@
     color: #243E63
   }
 
-  @media (min-width: 1024px) {
-
-    .light__NavLink {
-        margin: 0px 24px;
-        font-size: 14px;
-    }
-  }
+  
 
   .nav__logo--container-title {
         font-size: 24px;
@@ -135,13 +129,6 @@
     justify-content: space-between;
   }
 
-  @media (min-width: 1024px) {
-
-    .light__DesktopNavLinks {
-        display: flex;
-    }
-  }
-
 
 
   .light_NavLinkFR {
@@ -163,14 +150,7 @@
     text-decoration: inherit;
   }
 
-  @media (min-width: 1024px) {
-
-    .light_NavLinkFR {
-        margin: 0px 24px;
-    }
-  }
-
-
+  
 
   a {
     color: inherit;
@@ -220,11 +200,8 @@
 }
 
 .nlb--var-2 {
-    margin-top: 16px;
-    margin-bottom: 16px;
     margin-right: 8px;
     display: flex;
-    width: 100%;
     -webkit-box-align: center;
     align-items: center;
     justify-content: center;
@@ -239,9 +216,7 @@
     color: rgb(247 250 252 / var(--tw-text-opacity));
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
-    padding: 12px 24px;
-    border-radius: 9999px;
-    margin: 16px 8px 16px 0px;
+    appearance: button;
 }
 
 .nlb--var-2:hover {
@@ -304,7 +279,6 @@ button {
 }
 
 .trusted__customer {
-    font: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -312,11 +286,6 @@ button {
     color: rgb(160 174 192 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-    .trusted__customer p {
-        font-size: 12px;
-    }
-}
 
 
 h5 {
@@ -348,14 +317,6 @@ transition-property: background-color, border-color, color, fill, stroke, opacit
 transition-duration: 300ms;
 }
 
-@media (min-width: 1024px) {
-.light__PrimaryLink, .light__StyledPrimaryLink {
-margin-left: 0px;
-margin-right: 0px;
-}
-}
-
-
 
 .TwoColumnWithInput__Container {
     position: relative;
@@ -366,29 +327,10 @@ margin-right: 0px;
     margin-right: auto;
     display: flex;
     max-width: 1280px;
-    flex-direction: column;
-    padding-top: 80px;
-    padding-bottom: 5rem;
-}
-
-@media (min-width: 1024px) {
-
-    .TwoColumnWithInput__TwoColumn {
-        flex-direction: row;
-        -webkit-box-align: center;
-        align-items: center;
-
-    }
-}
-
-@media (min-width: 768px) {
-
-    .TwoColumnWithInput__TwoColumn {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
 
 }
+
+
 
 .TwoColumnWithInput__LeftColumn {
     position: relative;
@@ -396,44 +338,62 @@ margin-right: 0px;
     margin-right: auto;
 }
 
-@media (min-width: 1024px) {
-    .TwoColumnWithInput__LeftColumn {
-        width: 41.6667%;
-        max-width: none;
-        text-align: left;
-    }
-}
+
 
 .TwoColumnWithInput__Heading {
-    font-size: 30px;
     font-weight: 700;
     line-height: 1.25;
     --tw-text-opacity: 1;
     color: rgb(26 32 44 / var(--tw-text-opacity));
+    text-align: left;
 }
 
 .TwoColumnWithInput__Paragraph {
-    margin-top: 20px;
-    margin-bottom: 1.25rem;
+
     font-size: 16px;
 }
 
+
 .TwoColumnWithInput__Actions {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 28rem;
+    max-width: 448px;
     text-align: center;
 }
 
+input {
 
-@media (min-width: 1024px) {
+width: 100%;
+border-radius: 9999px;
+border-width: 2px;
+padding-left: 32px;
+font-weight: 500;
+transition-property: background-color, border-color, color, fill stroke, opacity, box-shadow, transform;
+transition-duration: 300ms;
+font-family: inherit;
+font-size: 100%;
+line-height: inherit;
+color: inherit;
+margin: 0px;
+overflow-clip-margin: 0px !important;
+overflow: clip !important;
+padding-block: 1px;
+padding-inline: 2px;
+text-rendering: auto;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+appearance: auto;
+-webkit-rtl-ordering: logical;
+cursor: text;
+background-color: field;
 
-.TwoColumnWithInput__CustomersLogoStrip {
-
-    margin-top: 80px;
 }
-}
+
+
 
 .FortuneAndStuff {
     margin-top: 16px;
@@ -441,14 +401,6 @@ margin-right: 0px;
     opacity: 0.5;
 }
 
-@media (min-width: 1024px) {
-
-.FortuneAndStuff img {
-
-padding-right: 64px;
-
-}
-}
 
 .TwoColumnWithInput__RightColumn {
     position: relative;
@@ -509,11 +461,6 @@ padding-right: 64px;
     letter-spacing: 0.4px;
 }
 
-@media (min-width: 640px) {
-    .ThreeColWithSideImage__Heading {
-        font-size: 48px;
-    }
-}
 
 .SaaSProductLandingPage__HighlightedText {
     --tw-text-opacity: 1;
@@ -532,17 +479,6 @@ padding-right: 64px;
     padding-bottom: 80px;
 }
 
-@media (min-width: 768px) {
-.ThreeColumnWithSideImage__ThreeColumContainer {
-    flex-direction: row;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-    -webkit-box-pack: center;
-    justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-}
 
 .ThreeColumnWithSideImage__Description {
     width: 100%;
@@ -556,12 +492,6 @@ padding-right: 64px;
     color: rgb(124 139 161 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-    .ThreeColumnWithSideImage__Description {
-        font-size: 18px;
-    }
-
-}
 
 .ThreeColumnWithSideImage__VerticalSpacer {
     margin-top: 40px;
@@ -572,12 +502,6 @@ padding-right: 64px;
     max-width: 384px;
 }
 
-@media (min-width: 1024px) {
-    .ThreeColumnWithSideImage__Column {
-        width: 33.33%;
-    }
-
-}
 
 .ThreeColWithSideImage__Card {
     margin-left: 16px;
@@ -591,13 +515,6 @@ padding-right: 64px;
     text-align: center;
 }
 
-@media (min-width: 640px) {
-    .ThreeColWithSideImage__Card {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-    }  
-}
 
 .imageContainer {
     flex-shrink: 0;
@@ -625,16 +542,6 @@ padding-right: 64px;
     color: rgb(124 139 161 / var(--tw-text-opacity));
 }
 
-.textContainer {
-   
-}
-
-@media (min-width: 640px) {
-    .textContainer {
-        margin-left: 16px;
-        margin-top: 8px;
-    }
-}
 
 
 /* NEXT SECTION */
@@ -661,20 +568,6 @@ padding-right: 64px;
     padding-bottom: 80px;
 }
 
-@media (min-width: 1024px) {
-    .TwoColWithButton__TwoColumn {
-       flex-direction: row;
-       -webkit-box-align: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 768px) {
-.TwoColWithButton__TwoColumn {
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-}
 
 
 .TwoColWithButton__StyledImage {
@@ -702,13 +595,6 @@ padding-right: 64px;
     letter-spacing: 0.4px;
 }
 
-@media (min-width: 1024px) {
-    
-    .TwoColWithButton__Heading  {
-        font-size: 48px;
-        text-align: left;
-    }
-}
 
 .TwoColWithButton__Description {
     margin-top: 16px;
@@ -720,17 +606,7 @@ padding-right: 64px;
     color: rgb(124 139 161 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-    .TwoColWithButton__Description {
-        font-size: 18px;
-    }
-}
 
-@media (min-width: 768px) {
-    .TwoColWithButton__Description {
-        text-align: left;
-    }
-}
 
 .TwoColWithButton__PrimaryButton {
     margin-left: auto;
@@ -749,13 +625,6 @@ padding-right: 64px;
     transition-duration: 300ms;
 }
 
-@media (min-width: 768px) {
-    .TwoColWithButton__PrimaryButton {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 32px;
-    }
-}
 
 .TwoColWithSteps__Image {
     border-radius: 4px;
@@ -854,30 +723,11 @@ padding-right: 64px;
     padding-bottom: 80px;
 }
 
-@media (min-width: 768px) {
-    .TwoColWithSteps__TwoColumn {
-        flex-direction: row;
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }    
-}
 
 .TwoColWithSteps__TextContent {
     text-align: center;
 }
 
-@media (min-width: 1024px) {
-    .TwoColWithSteps__TextContent {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-}
-
-@media (min-width: 768px) {
-    .TwoColWithSteps__TextContent {
-       text-align: left;
-    }
-}
 
 .TwoColWithSteps__TwoColumn, .TwoColWithSteps__ImageColumn {
     position: relative;
@@ -929,16 +779,6 @@ padding-right: 64px;
     list-style: none;
 }
 
-@media (min-width: 768px) {
-
-    .TwoColWithStep__Step {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-}
-
-
-
 
 
 .TwoColWithSteps__StepNumber {
@@ -953,12 +793,6 @@ padding-right: 64px;
     margin-top: 12px;
 }
 
-@media (min-width: 768px) {
-    .TwoColWithSteps__StepText {
-        margin-top: 0px;
-        margin-left: 24px;
-    }
-}
 
 
 .TwoColWithSteps__StepHeading {
@@ -988,17 +822,6 @@ padding-right: 64px;
     unicode-bid: isolate;
 }
 
-@media (min-width: 1024px) {
-   .TwoColWithSteps__Heading {
-    font-size: 48px;
-   } 
-}
-
-@media (min-width: 768px) {
-    .TwoColWithSteps__Heading {
-     text-align: left;
-    } 
- }
 
 
 
@@ -1052,13 +875,6 @@ padding-right: 64px;
     padding-bottom: 80px;
 }
 
-@media (min-width: 768px) {
-   .TwoColWithTwoHorizontalFeaturesAndButton__TwoColumn {
-        flex-direction: row;
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-}
 
 .TwoColWithHorizontalFeaturesAndButton__Heading {
     margin-top: 16px;
@@ -1095,19 +911,7 @@ padding-right: 64px;
     
 }
 
-@media (min-width: 1024px) {
-    .TwoColWithButton__TextContent {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-}
 
-
-@media (min-width: 768px) {
-    .TwoColWithButton__TextContent {
-      text-align: left;
-    }
-}
 
 
 .SaaSProductLandingPage__Subheading {
@@ -1149,22 +953,8 @@ padding-right: 64px;
     text-align: center;
 }
 
-@media (min-width: 1024px) {
-   
-    .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
-       padding-top: 32px;
-       padding-bottom: 32px;
-       
-    }
-}
 
-@media (min-width: 768px) {
 
- .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
-    text-align: left;
- }
-
-}
 
 .TwoColWithHorizontalFeaturesAndButton__Subheading {
     text-align: center;
@@ -1235,13 +1025,6 @@ padding-right: 64px;
     text-decoration: inherit;
 }
 
-@media (min-width: 768px) {
-    .TwoColWithTwoHorizontalFeaturesAndButton__PrimaryButton {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-}
 
 .TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainer2, .TwoColWithTwoHorizontalFeaturesAndButton__StyledFeatureIconContainer2 {
     background-color: #FEB2B2;
@@ -1356,13 +1139,6 @@ p {
    unicode-bidi: isolate;
 }
 
-@media (min-width: 1024px) {
-
-    .ThreePlans__Description {
-        font-size: 18px;
-    }
-
-}
 
 .ThreePlans_PlansContainer {
     position: relative;
@@ -1384,14 +1160,6 @@ p {
     justify-content: space-between;
 }
 
-@media (min-width: 1024px) {
-
-.ThreePlans__PlansContainer {
-    flex-direction: row;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-}
-}
 
 .ThreePlans__Plan {
     position: relative;
@@ -1417,11 +1185,6 @@ p {
     tab-size: 4;
 }
 
-@media (min-width: 1024px) {
-    .ThreePlans_Plan {
-        margin-right: 32px;
-    }
-}
 
 .ThreePlans___StyledDiv {
     position: absolute;
@@ -2024,15 +1787,6 @@ p {
     max-width: 512px;
 }
 
-@media (min-width: 1024px) {
-    .GetStarted__ColumnContainer, .GetStarted__LinksContainer {
-
-margin-top: 0px;
--webkit-box-pack: end;
-justify-content: flex-end;
-
-    }
-}
 
 
 .GetSarted__Link, .GetStarted__PrimaryLink {
@@ -2056,24 +1810,7 @@ justify-content: flex-end;
     transition-duration: 300ms;
 }
 
-@media (min-width: 1024px) {
-    .GetSarted__Link, .GetStarted__PrimaryLink {
 
-      padding: 20px 40px;
-        
-    }
-}
-
-@media (min-width: 640px) {
-
-    .GetSarted__Link, .GetStarted__PrimaryLink {
-
-      margin-right: 32px;
-      width: auto;
-      font-size: 16px  
-    }
-
-}
 
 .GetStarted__Link2, .GetStarted__SecondaryLink {
     border-color: rgb(160 174 192 / var(--tw-borer-opacity));
@@ -2091,35 +1828,6 @@ justify-content: flex-end;
     letter-spacing: 4px;
     transition-duration: 300ms;
 }
-
-@media (min-width: 640px) {
-
-    .GetStarted__Link2, .GetStarted__SecondaryLink: last-child {
-
-        margin-right: 0px;
-    }
-}
-
-@media (min-width: 1024px) {
-
-    .GetStarted__Link2, .GetStarted__SecondaryLink {
-
-padding: 20px  40px
-
-    }
-
-}
-
-@media (min-width: 640px) {
-
-    .GetStarted__Link2, .GetStarted__SecondaryLink {
-
-        margin-right: 0px;
-        width: auto;
-        font-size: 16px;
-    }
-}
-
 
 
 .GetStarted__DecoratorBlobContainer {
@@ -2144,15 +1852,6 @@ padding: 20px  40px
     color: rgb(247 250 252 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-
-.FiveColumnWithBackground__Container {
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-}
-
-
 
 .FiveColumnWithBackground__FiveColumns {
     -webkit-box-pack: justify;
@@ -2166,20 +1865,8 @@ padding: 20px  40px
     color: rgb (247 250 252 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
 
-.FiveColumnWithBackground__FiveColumns {
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-}
-}
 
-@media (min-width: 640px) {
-
-    .FiveColumnWithBackground__FiveColumns {
-        text-align: left;
-    }
-}
 
 .FiveColumnEithBackground__Column {
     width: auto;
@@ -2189,22 +1876,7 @@ padding: 20px  40px
     color: rgb(247 250 252 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
 
-    .FiveColumnEithBackground__Column {
-        width: auto;
-    }
-}
-
-@media (min-width: 640px) {
-
-    .FiveColumnEithBackground__Columnn {
-     text-align: left;
-      padding-left: 0px;
-      padding-right: 0px;  
-    }
-
-}
 
 .FiveColumnWithBackground__LinkListItem {
    margin-top: 12px; 
@@ -2297,12 +1969,6 @@ padding: 20px  40px
    unicode-bidi: isolate;
 }
 
-@media (min-width: 640px) {
-
-    .FiveColumnWithBackgroundColumn__Heading {
-    text-align: left;
-}
-}
 
 
 .FiveCAolumnWithBackground__LogoText {
@@ -2322,3 +1988,320 @@ padding: 20px  40px
     color: rgb(100, 21, 255);
     margin: 0px;
 }
+
+
+
+
+
+@media (min-width: 1024px) {
+
+    .light__NavLink {
+        margin: 0px 24px;
+        font-size: 14px;
+    }
+
+    .light__DesktopNavLinks {
+        display: flex;
+    }
+
+    
+    .light_NavLinkFR {
+        margin: 0px 24px;
+    }
+
+    .TwoColumnWithInput__CustomersLogoStrip {
+
+        margin-top: 80px;
+    }
+
+    .TwoColumnWithInput__TwoColumn {
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+
+    }
+
+    .TwoColWithSteps__TextContent {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+
+    .TwoColumnWithInput__LeftColumn {
+        width: 41.6667%;
+        max-width: none;
+        text-align: left;
+    }
+
+    .TwoColumnWithInput__Heading {
+        font-size: 36px;
+    }
+
+    .TwoColWithButton__Heading  {
+        font-size: 48px;
+        text-align: left;
+    }
+
+
+    .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+     }
+
+     .TwoColWithButton__TextContent {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .TwoColWithButton__Description {
+        font-size: 18px;
+    }
+
+    .TwoColumnWithInput__Paragraph {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        text-align: left;
+            }
+
+
+    .FortuneAndStuff img {
+
+        padding-right: 64px;
+        
+        }
+
+        .trusted__customer p {
+            font-size: 12px;
+        }
+
+        .light__PrimaryLink, .light__StyledPrimaryLink {
+            margin-left: 0px;
+            margin-right: 0px;
+            }
+
+            .TwoColumnWithInput__Actions {
+                margin-left: 0px;
+                margin-right: 0px;
+        
+            }
+
+            .TwoColumnWithInput__TwoColumn {
+                flex-direction: row;
+                -webkit-box-align: center;
+                align-items: center;
+        
+            }
+
+            .ThreePlans__Description {
+                font-size: 18px;
+            }
+
+            .ThreePlans__PlansContainer {
+                flex-direction: row;
+                -webkit-box-align: stretch;
+                align-items: stretch;
+            }
+
+            .ThreeColumnWithSideImage__Column {
+                width: 33.33%;
+            }
+
+
+            .ThreePlans_Plan {
+                margin-right: 32px;
+            }
+
+            .ThreeColumnWithSideImage__Description {
+                font-size: 18px;
+            }
+
+            .GetStarted__ColumnContainer, .GetStarted__LinksContainer {
+
+                margin-top: 0px;
+                -webkit-box-pack: end;
+                justify-content: flex-end;
+                
+                    }
+
+                    .GetSarted__Link, .GetStarted__PrimaryLink {
+
+                        padding: 20px 40px;
+                          
+                      }
+
+                      .GetStarted__Link2, .GetStarted__SecondaryLink {
+
+                        padding: 20px  40px
+                        
+                            }
+                            
+                            
+                        .FiveColumnWithBackground__Container {
+                                padding-top: 96px;
+                                padding-bottom: 96px;
+                            }
+
+                            .TwoColWithSteps__Heading {
+                                font-size: 48px;
+                               } 
+
+
+
+  }
+
+
+  @media (min-width: 640px) {
+    .ThreeColWithSideImage__Heading {
+        font-size: 48px;
+    }
+
+    input {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 192px;
+    }
+
+    .textContainer {
+        margin-left: 16px;
+        margin-top: 8px;
+    }
+
+    .nlb--var-2 {
+        position: absolute;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 160px;
+        line-height: 1;
+    }
+
+    .ThreeColWithSideImage__Heading {
+        font-size: 48px;
+    }
+
+    .ThreeColWithSideImage__Card {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .GetSarted__Link, .GetStarted__PrimaryLink {
+
+        margin-right: 32px;
+        width: auto;
+        font-size: 16px  
+      }
+
+      .GetStarted__Link2, .GetStarted__SecondaryLink {
+
+        margin-right: 0px;
+        width: auto;
+        font-size: 16px;
+    }
+
+      .GetStarted__Link2, .GetStarted__SecondaryLink: last-child {
+
+        margin-right: 0px;
+    }
+
+
+    .FiveColumnWithBackgroundColumn__Heading {
+        text-align: left;
+    }
+
+    .FiveColumnWithBackground__FiveColumns {
+        text-align: left;
+    }
+
+    .FiveColumnEithBackground__Columnn {
+        text-align: left;
+         padding-left: 0px;
+         padding-right: 0px;  
+       }
+
+      }
+
+
+@media (min-width: 768px) {
+    .ThreeColumnWithSideImage__ThreeColumContainer {
+        flex-direction: row;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    
+    .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
+        text-align: left;
+     }
+
+     .TwoColWithButton__PrimaryButton {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 32px;
+    }
+
+     .TwoColWithTwoHorizontalFeaturesAndButton__PrimaryButton {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .TwoColWithTwoHorizontalFeaturesAndButton__TwoColumn {
+        flex-direction: row;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .TwoColWithStep__Step {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .TwoColWithSteps__Heading {
+        text-align: left;
+       } 
+
+    .TwoColWithButton__TextContent {
+        text-align: left;
+      }
+
+          .TwoColWithButton__Description {
+        text-align: left;
+    }
+
+    .TwoColumnWithInput__TwoColumn {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .TwoColWithSteps__TwoColumn {
+        flex-direction: row;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }   
+
+    .TwoColWithSteps__StepText {
+        margin-top: 0px;
+        margin-left: 24px;
+    }
+
+    .FiveColumnWithBackground__FiveColumns {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+
+    .FiveColumnEithBackground__Column {
+        width: auto;
+    }
+
+    
+
+}
+
+     
+
+
+    
