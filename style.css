@@ -1839,12 +1839,7 @@ p {
 }
 
 .FiveColumnWithBackground__Container {
-    padding-top: 96px;
-    padding-bottom: 96px;
     position: relative;
-    margin-left: -32px;
-    margin-right: -32px;
-    margin-bottom: -32px;
     --tw-bg-opacity: 1;
     background-color: rgb(100 21 255 / var(--tw-bg-opacity));
     padding: 80px 32px;
@@ -1853,27 +1848,12 @@ p {
 }
 
 
-.FiveColumnWithBackground__FiveColumns {
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    text-align: left;
-    margin-top: -48px;
-    display: flex;
-    flex-wrap: wrap;
-    --tw-bg-opacity: 1;
-    --tw-text-opacity: 1;
-    color: rgb (247 250 252 / var(--tw-text-opacity));
-}
-
-
 
 
 .FiveColumnEithBackground__Column {
-    width: auto;
-    margin-top: 48px;
-    --tw-bg-opacity: 1;
-    --tw-text-opacity: 1;
-    color: rgb(247 250 252 / var(--tw-text-opacity));
+    display: flex;
+    justify-content: space-between;
+
 }
 
 
@@ -1924,7 +1904,6 @@ p {
 
 .FiveColumnWithBackground__ThreeColRow {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     -webkit-box-align:center;
@@ -1977,19 +1956,41 @@ p {
     font-weight: 900;
     letter-spacing: 0.8px;
     --tw-text-opacity: 1;
-    color: rgb(100, 21, 255);
+    color: #F7FAFC;
 }
+
+
+
 
 .FiveColumnWithBackground__CopywrightNotice {
-    margin-top: 32px;
     text-align: center;
-    font-size: 14px;
     font-weight: 500;
+    --tw-text-opacity: 1;
     color: rgb(100, 21, 255);
     margin: 0px;
+    font: 16px Inter, system-ui;
+    color: #CBD5E0;
+    contrast: 4.56;
 }
 
 
+.FiveColumnWithBackground__SocialLinksContainer {
+    display: flex;
+}
+
+.FiveColumnWithBackground__SocialLink {
+
+margin-right: 16px;
+cursor: pointer;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+background-color: rgb(247 250 252 / var (--tw-bg-opacity));
+padding: 8px;
+--tw-text-opacity: 1;
+color: rgb(26 32 44 / var (--tw-text-opacity));
+transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+transition-duration: 300ms;
+}
 
 
 
@@ -2219,6 +2220,11 @@ p {
          padding-right: 0px;  
        }
 
+       .FiveColumnWithBackground__CopywrightNotice {
+        font-size: 16px;
+        text-align: center;
+       }
+
       }
 
 
@@ -2297,7 +2303,19 @@ p {
         width: auto;
     }
 
+    .FiveColumnWithBackground__ThreeColRow {
+        flex-direction: row;
+    }
+
+    .FiveColumnWithBackground__CopywrightNotice {
+        margin-top: 0px;
+    }
     
+    .FiveColumnWithBackground__SocialLinksContainer {
+        margin-top: 0px;
+    }
+
+
 
 }
 
