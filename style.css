@@ -499,7 +499,12 @@ background-color: field;
 } 
 
 .ThreeColumnWithSideImage__Column {
-    max-width: 384px;
+    /* max-width: 1200px; */
+    /* width: 100%; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
 }
 
 
@@ -513,6 +518,7 @@ background-color: field;
     align-items: center;
     padding: 2rem 0.5rem;
     text-align: center;
+    width: calc(100% /3);
 }
 
 
