@@ -319,8 +319,11 @@ transition-duration: 300ms;
 
 
 .TwoColumnWithInput__Container {
-    position: relative;
+    display: flex;
+    margin-top: 150px;
 }
+
+
 
 .TwoColumnWithInput__TwoColumn {
     margin-left: auto;
@@ -506,6 +509,8 @@ background-color: field;
       justify-content: center;
 
 }
+ 
+
 
 
 .ThreeColWithSideImage__Card {
