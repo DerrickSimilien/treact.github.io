@@ -616,6 +616,8 @@ background-color: field;
 
 
 
+
+
 .TwoColWithButton__PrimaryButton {
     margin-left: auto;
     margin-right: auto;
@@ -640,7 +642,6 @@ background-color: field;
     height: auto;
     display: block;
     vertical-align: middle;
-    overflow-clip-margin: content-box;
     overflow: clip;
 }
 
@@ -661,8 +662,6 @@ background-color: field;
 
 .TwoColWithHorizontalFeaturesAndButton__Description {
     margin-top: 32px;
-    text-align: center;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.625;
     --tw-text-opacity: 1;
@@ -670,12 +669,7 @@ background-color: field;
 }
 
 .TwoColWithTwoHorizontalFeaturesAndButton__Features {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-    max-width: 320px;
-    flex-direction: column;
-    text-align: center;
 }
 
 .TwoColWithTwoHorizontalFeaturesAndButton__Feature {
@@ -715,6 +709,7 @@ background-color: field;
 
 .TwoColWithSteps__Container {
     position: relative;
+    line-height: inherit;
 }
 
 .TwoColWithSteps__TwoColumn {
@@ -722,7 +717,6 @@ background-color: field;
     margin-right: auto;
     display: flex;
     max-width: 1280px;
-    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
@@ -752,40 +746,49 @@ background-color: field;
     color: #243E63;
     font-size: 20px;
     font-weight: 600;
-}
+} 
 
 .TwoColWithSteps__StepDescription {
-    color: #718096;
+    margin-top: 8px;
+    max-width: 320px;
+    line-height: 2;
     font-size: 14px;
     text-align: center;
+    --tw-text-opacity: 1;
+    color: #718096;
     margin: 12px 0px 0px;
 }
 
 .TwoColWithSteps__Steps {
     margin-top: 48px;
-    list-style: none;
     margin: 0px;
     padding: 0px;
-    display: block;
-    margin-block-start: 16px;
-    margin-block-end: 16px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-    text-align: center;
+}
+
+ul {
+ list-style: none;
+ margin: 0px;
+ padding: 0px;
+ display: block;
+ margin-block-start: 16px;
+ margin-block-end: 16px;
+ margin-inline-start: 0px;
+ margin-inline-end: 0px;
+ padding-inline-start: 40px;
+ unicode-bidi: isolate;
 }
 
 .TwoColWithStep__Step {
     margin-top: 32px;
     display: flex;
-    flex-direction: column;
     -webkit-box-align: center;
-    align-items: center;
     text-align: -webkit-match-parent;
     unicode-bidi: isolate;
     list-style: none;
+    flex-direction: row;
+    align-items: flex-start;
 }
+
 
 
 
@@ -797,8 +800,10 @@ background-color: field;
     color: rgb(203 213 224 / var(--tw-text-opacity));
 }
 
-.TwoColWithSteps__StepText {
-    margin-top: 12px;
+
+li {
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
 }
 
 
@@ -873,21 +878,16 @@ background-color: field;
     margin-right: auto;
     display: flex;
     max-width: 1280px;
-    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-align: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 
 .TwoColWithHorizontalFeaturesAndButton__Heading {
     margin-top: 16px;
-    text-align: center;
-    font-size: 30px;
     font-weight: 900;
     line-height: 1.25;
     letter-spacing: 0.4px;
@@ -1466,32 +1466,18 @@ p {
 
 .TwoColumnWithImageAndRating__Image {
     border-radius: 4px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    vertical-align: middle;
-    width: 40%;
-    padding-top: 10%;
+    
 }
 
 .TwoColumnWithImageAndRating__Row  {
     display: flex;
-    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
 
-.TwoColumnWithImageAndRating__Description {
-    color: #7C8BA1;
-    font-size: 14px;
-    margin: 24px 0px 0px;
-    margin-top: 24px;
-    text-align: center;
-    font-weight: 500;
-    line-height: 1.625;
-}
+
 
 .TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__ImageColumn {
     position: relative;
@@ -1502,13 +1488,6 @@ p {
     max-width: 448px;
 }
 
-.TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__TextColumn {
-    margin-top: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 448px;
-}
 
 .TwoColumnWithImageAndRating__Subheading {
     text-align: center;
@@ -1519,8 +1498,6 @@ p {
 
 .TwoColumnWithImageAndRating__Heading {
    margin-top: 16px;
-   text-align: center;
-   font-size: 30px;
    font-weight: 900; 
    line-height: 1.25;
    letter-spacing: 0.4px;
@@ -1528,8 +1505,6 @@ p {
 
 .TwoColumnWithImageAndRating__Description {
     margin-top: 24px;
-    text-align: center;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.625;
     --tw-text-opacity: 1;
@@ -1540,10 +1515,6 @@ p {
 .TwoColumnWithImageAnRratiing__TestimonialSlider {
     margin-top: 40px;
     width: 100%;
-    text-align: center;
-    display: block;
-    position: relative;
-    box-sizing: border-box;  
 }
 
 .slick-list {
@@ -1568,30 +1539,19 @@ p {
 
 .TwoColumnWithImageAndRating__Quote {
     margin-top: 16px;
-    margin-bottom: 32px;
     font-weight: 500;
     line-height: 1.625;
-    margin: 0px;
     color: rgb(74 85 104);
 }
 
 .TwoColumnWithImageAndRating__TestimonialHeading {
-    margin: 16px 0px 0px;
-    Font: 20px;
+    margin: 16px;
+    font-size: 20px;
     color: #243E63;
+    font-weight: 700;
 }
 
-.TwoColumnWithImageAndRating__Quote
- { Color: #4A5568;
-    font-size: 20px;
-    Margin: 16px 0px 32px;
-    margin-top: 16px;
-    margin-bottom: 32px;
-    font-weight: 500;
-    line-height: 1.625;
-    align-items: center;
-    flex-direction: column;
- }
+
 
  .TwoColumnWithImaeAndRating__CustomerInfoAndControlsContainer {
     margin-top: auto;
@@ -1974,6 +1934,29 @@ p {
     color: #F7FAFC;
 }
 
+.TwoColumnWithImageAndRating__Testimmonial {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    display: flex !important;
+}
+
+.TwoColumnWithImageAndRating__CustomerInfo {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
 
 
 
@@ -2019,6 +2002,18 @@ transition-duration: 300ms;
     .light__DesktopNavLinks {
         display: flex;
     }
+    .TwoColWithHorizontalFeaturesAndButton__Description {
+        font-size: 18px;
+    }
+
+    .TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__TextColumn {
+        padding: 64px;
+    }
+
+
+    .TwoColumnWithImageAndRating__Description {
+        font-size: 18px;
+    }
 
     
     .light_NavLinkFR {
@@ -2034,7 +2029,15 @@ transition-duration: 300ms;
         flex-direction: row;
         -webkit-box-align: center;
         align-items: center;
+    }
 
+    .TwoColWithTwoHorizontalFeaturesAndButton__Features {
+        max-width: none;
+        flex-direction: row;
+    }
+
+    .TwoColumnWithImageAndRating__Heading {
+        font-size: 48px;
     }
 
     .TwoColWithSteps__TextContent {
@@ -2056,13 +2059,18 @@ transition-duration: 300ms;
     .TwoColWithButton__Heading  {
         font-size: 48px;
         text-align: left;
-    }
+    } 
 
 
     .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
         padding-top: 32px;
         padding-bottom: 32px;
         
+     }
+
+     .TwoColumnWithImageAndRating__CustomerInfo {
+        -webkit-box-pack: start;
+        justify-content: flex-start;
      }
 
      .TwoColWithButton__TextContent {
@@ -2078,7 +2086,11 @@ transition-duration: 300ms;
         margin-top: 32px;
         margin-bottom: 32px;
         text-align: left;
-            }
+        }
+
+    .TwoColWithHorizontalFeaturesAndButton__Heading {
+        font-size: 48px;
+    }
 
 
     .FortuneAndStuff img {
@@ -2187,7 +2199,7 @@ transition-duration: 300ms;
         margin-bottom: 8px;
         width: 160px;
         line-height: 1;
-    }
+    } 
 
     .ThreeColWithSideImage__Heading {
         font-size: 48px;
@@ -2218,9 +2230,17 @@ transition-duration: 300ms;
         margin-right: 0px;
     }
 
+    .TwoColumnWithImageAndRating__Quote {
+        margin-bottom: 40px;
+    }
+
 
     .FiveColumnWithBackgroundColumn__Heading {
         text-align: left;
+    }
+
+    .TwoColumnWithImageAndRating__CustomerInfo {
+        flex-direction: row;
     }
 
     .FiveColumnWithBackground__FiveColumns {
@@ -2257,6 +2277,40 @@ transition-duration: 300ms;
         text-align: left;
      }
 
+     .TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__TextColumn {
+        order: 9999;
+        margin-top: 0px;
+        width: 58.3333%;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: none;
+     }
+
+     .TwoColWithHorizontalFeaturesAndButton__Heading {
+        text-align: right;
+     }
+
+     .TwoColWithHorizontalFeaturesAndButton__Description {
+        text-align: left;
+     }
+
+     .TwoColWithTwoHorizontalFeaturesAndButton__Features {
+        margin-right: 0px;
+        margin-left: 0px;
+     }
+
+     .TwoColumnWithImageAndRating__Subheading {
+        text-align: left;
+     }
+
+     .TwoColumnWithImageAndRating__Heading {
+        text-align: left;
+     }
+
+     .TwoColumnWithImageAndRating__Description {
+        text-align: left;
+     }
+
      .TwoColWithButton__PrimaryButton {
         margin-left: 0px;
         margin-right: 0px;
@@ -2268,15 +2322,33 @@ transition-duration: 300ms;
         margin-right: 0px;
     }
 
+    .TwoColumnWithImageAndRating__Row {
+        flex-direction: row;
+
+    }
+
     .TwoColWithTwoHorizontalFeaturesAndButton__TwoColumn {
         flex-direction: row;
         padding-top: 96px;
         padding-bottom: 96px;
     }
 
-    .TwoColWithStep__Step {
-        flex-direction: row;
-        align-items: flex-start;
+    .TwoColWithSteps__TwoColumn, .TwoColWithSteps__ImageColumn {
+        width: 50%;
+        margin-left: 0px;
+        margin: right;
+        max-width: none;
+    }
+
+    .TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__ImageColumn {
+        width: 41.6667%;
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: none;
+    }
+
+    .TwoColumnWithImageAnRratiing__TestimonialSlider {
+        text-align: left;
     }
 
     .TwoColWithSteps__Heading {
@@ -2291,16 +2363,18 @@ transition-duration: 300ms;
         text-align: left;
     }
 
+    .TwoColWithSteps__TwoColumn {
+        flex-direction: row;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
     .TwoColumnWithInput__TwoColumn {
         padding-top: 96px;
         padding-bottom: 96px;
     }
 
-    .TwoColWithSteps__TwoColumn {
-        flex-direction: row;
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }   
+
 
     .TwoColWithSteps__StepText {
         margin-top: 0px;
