@@ -697,19 +697,13 @@ background-color: field;
 .TwoColWithSteps__StepNumber {
     color: #CBD5E0;
     font-size: 36px;
-    line-height: 1;
-    box-sizing: border-box;
-    border-width: 0px;
-    border-style: solid;
-    border-color: rgb(226, 232, 240);
     font-weight: 600;
     text-align: center;
-    flex-direction: column;
 }
 
 .TwoColWithSteps__Container {
-    position: relative;
-    line-height: inherit;
+
+    
 }
 
 .TwoColWithSteps__TwoColumn {
@@ -730,6 +724,13 @@ background-color: field;
     text-align: center;
 }
 
+.TwoColWithSteps__TwoColumnYes {
+    display: flex;
+    align-items: center;
+
+
+}
+
 
 .TwoColWithSteps__TwoColumn, .TwoColWithSteps__ImageColumn {
     position: relative;
@@ -742,21 +743,14 @@ background-color: field;
 
 .TwoColWithSteps__StepHeading {
     margin: 0px;
-    text-align: center;
+    text-align: left;
     color: #243E63;
     font-size: 20px;
     font-weight: 600;
 } 
 
 .TwoColWithSteps__StepDescription {
-    margin-top: 8px;
-    max-width: 320px;
-    line-height: 2;
-    font-size: 14px;
-    text-align: center;
-    --tw-text-opacity: 1;
-    color: #718096;
-    margin: 12px 0px 0px;
+    text-align: left;
 }
 
 .TwoColWithSteps__Steps {
@@ -779,14 +773,8 @@ ul {
 }
 
 .TwoColWithStep__Step {
-    margin-top: 32px;
     display: flex;
-    -webkit-box-align: center;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
-    list-style: none;
-    flex-direction: row;
-    align-items: flex-start;
+    padding-bottom: 20px;
 }
 
 
@@ -801,23 +789,15 @@ ul {
 }
 
 
-li {
+/* li {
     text-align: -webkit-match-parent;
     unicode-bidi: isolate;
-}
+} */
 
 
 
 .TwoColWithSteps__StepHeading {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1;
-    display: block;
-    margin-block-start: 37.28px;
-    margin-block-end: 37.28px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+    padding-bottom: 8px;
 }
 
 .TwoColWithSteps__Heading {
@@ -835,6 +815,12 @@ li {
     unicode-bid: isolate;
 }
 
+
+.TwoColWithSteps__StepText {
+
+    text-align: left;
+    width: 50%;
+}
 
 
 
@@ -1719,6 +1705,11 @@ p {
  
 }
 
+.GetStarted__ColumnContainerGetStarted__LinksContainer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
 
 
 .GetStarted__PrimaryBackgroundContainer {
@@ -1730,17 +1721,11 @@ p {
 }
 
 .GetStarted__Row {
-    position: relative;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-    max-width: 1024px;
-    flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
+    justify-content: space-between;
     padding-left: 32px;
-    padding right: 32px;
+    padding-right: 32px;
     text-align: center;
 }
 
@@ -1764,44 +1749,24 @@ p {
 
 
 
-.GetSarted__Link, .GetStarted__PrimaryLink {
-    margin-top: 0px;
-    background: #F56565;
-    --tw-text-opacity: 1;
-    color: rgb(247 250 252 / var(--tw-text-opacity));
-    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-    --tw-shadow-colored: 0 10px 15px -3px var (--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    width: 100%;
-    border-radius: 9999px;
-    border-width: 1px;
-    border-color: transparent;
-    padding: 12px 24px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, trandform;
-    transition-duration: 300ms;
+.GetSarted__Link1 {
+    
+background-color: #ffb115;
+padding: 16px 32px;
+border-radius: 100px;
+margin-right: 10px;
+
 }
 
 
 
-.GetStarted__Link2, .GetStarted__SecondaryLink {
-    border-color: rgb(160 174 192 / var(--tw-borer-opacity));
-    --tw-border-opacity: 1;
-    --tw-text-opacity: 1;
-    background-color: rgb(245, 101, 101);
-    color: rgb(247 250 252 / var(--tw-text-opacity));
-    font-size: 14px;
-    border-radius: 9999px;
-    margin-top: 16px;
-    width: 100%;
-    border-width: 1px;
-    padding: 12px 24px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    transition-duration: 300ms;
+.GetStarted__Link2 {
+
+background-color: transparent;
+padding: 16px 32px;
+border-radius: 100px;
+border: 1px solid gray;
+
 }
 
 
@@ -1976,9 +1941,15 @@ blockquote {
     display: flex;
 }
 
+.FiveColumnWithBackground__SocialLink2 {
+    margin-left: 10px;
+
+}
+
 .FiveColumnWithBackground__SocialLink {
 
 margin-right: 16px;
+margin-left: 16px;
 cursor: pointer;
 border-radius: 9999px;
 --tw-bg-opacity: 1;
