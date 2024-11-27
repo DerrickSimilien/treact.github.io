@@ -200,6 +200,10 @@
 }
 
 .nlb--var-2 {
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 9999px;
     margin-right: 8px;
     display: flex;
     -webkit-box-align: center;
@@ -270,13 +274,13 @@ button {
     width: 100%;
     border-radius: 9999px;
     border-width: 2px;
-    padding-top: 16px;
-    padding-bottom: 16px;
     padding-left: 32px;
     font-weight: 500;
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
 }
+
+
 
 .trusted__customer {
     font-weight: 700;
@@ -284,6 +288,7 @@ button {
     letter-spacing: 0.8px;
     --tw-text-opacity: 1;
     color: rgb(160 174 192 / var(--tw-text-opacity));
+    text-align: left;
 }
 
 
@@ -319,18 +324,7 @@ transition-duration: 300ms;
 
 
 .TwoColumnWithInput__Container {
-    display: flex;
-    margin-top: 150px;
-}
-
-
-
-.TwoColumnWithInput__TwoColumn {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    max-width: 1280px;
-
+   position: relative;
 }
 
 
@@ -341,6 +335,15 @@ transition-duration: 300ms;
     margin-right: auto;
 }
 
+.TwoColumnWithInput__TwoColumn {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1280px;
+
+
+}
 
 
 .TwoColumnWithInput__Heading {
@@ -349,11 +352,14 @@ transition-duration: 300ms;
     --tw-text-opacity: 1;
     color: rgb(26 32 44 / var(--tw-text-opacity));
     text-align: left;
+    font-size: 16px;
 }
 
 .TwoColumnWithInput__Paragraph {
-
-    font-size: 16px;
+font-size: 16px;
+margin: 32px 0px;
+color: #243E63;
+font: 16px Inter, system-ui;
 }
 
 
@@ -376,6 +382,8 @@ font-family: inherit;
 font-size: 100%;
 line-height: inherit;
 color: inherit;
+background: #FFFF;
+Padding: 20px 192px 20px 32px;
 margin: 0px;
 overflow-clip-margin: 0px !important;
 overflow: clip !important;
@@ -407,7 +415,6 @@ background-color: field;
 
 .TwoColumnWithInput__RightColumn {
     position: relative;
-    margin-top: 48px;
     display: flex;
     flex: 1 1 0%;
     flex-direction: column;
@@ -424,12 +431,9 @@ background-color: field;
 }
 
 .TwoColumnWithInput___StyledImg {
-    width: 50%;
+    width: 100%;
     min-width: 0px;
-    max-width: 32rem;
-    display: block;
-    vertical-align: middle;
-    height: auto;
+    max-width: 512px;
 }
 
 .ThreeColumnSection {
@@ -512,9 +516,7 @@ background-color: field;
  
 
 
-
 .ThreeColWithSideImage__Card {
-
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -525,11 +527,13 @@ background-color: field;
 
 
 .imageContainer {
+
     flex-shrink: 0;
     border-radius: 9999px;
     border-width: 1px;
     padding: 20px;
     text-align: center;
+
 }
 
 
@@ -548,6 +552,7 @@ background-color: field;
     line-height: 2;
     --tw-text-opacity: 1;
     color: rgb(124 139 161 / var(--tw-text-opacity));
+    font: 16px;
 } 
 
 
@@ -892,6 +897,12 @@ ul {
     margin-right: auto;
     width: 100%;
     max-width: 448px;
+}
+
+.TwoColWithButton__Container {
+
+position: relative;
+
 }
 
 .TwoColWithButton__StyledImage {
@@ -1940,6 +1951,7 @@ blockquote {
 
 
 
+
 .FiveColumnWithBackground__SocialLinksContainer {
     display: flex;
     margin: 10px
@@ -1981,6 +1993,7 @@ transition-duration: 300ms;
         font-size: 18px;
     }
 
+
     .TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__TextColumn {
         padding: 64px;
     }
@@ -2004,6 +2017,13 @@ transition-duration: 300ms;
         flex-direction: row;
         -webkit-box-align: center;
         align-items: center;
+    }
+
+    .TwoColumnWithInput__RightColumn {
+
+        margin-top: 0px;
+        align-self: flex-end;
+
     }
 
     .TwoColWithTwoHorizontalFeaturesAndButton__Features {
@@ -2060,7 +2080,6 @@ transition-duration: 300ms;
     .TwoColumnWithInput__Paragraph {
         margin-top: 32px;
         margin-bottom: 32px;
-        text-align: left;
         }
 
     .TwoColWithHorizontalFeaturesAndButton__Heading {
@@ -2074,7 +2093,7 @@ transition-duration: 300ms;
         
         }
 
-        .trusted__customer p {
+        .trusted__customer {
             font-size: 12px;
         }
 
@@ -2089,12 +2108,6 @@ transition-duration: 300ms;
         
             }
 
-            .TwoColumnWithInput__TwoColumn {
-                flex-direction: row;
-                -webkit-box-align: center;
-                align-items: center;
-        
-            }
 
             .ThreePlans__Description {
                 font-size: 18px;
