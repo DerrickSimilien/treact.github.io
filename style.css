@@ -526,14 +526,15 @@ background-color: field;
 }
 
 
-.imageContainer {
 
-    flex-shrink: 0;
+figure {
+
+    border: 1px solid #e5e7eb;
     border-radius: 9999px;
-    border-width: 1px;
     padding: 20px;
     text-align: center;
-
+    border-width: 1px;
+    flex-shrink: 0;
 }
 
 
@@ -572,14 +573,14 @@ background-color: field;
     margin-right: auto;
     display: flex;
     max-width: 1280px;
-    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
+
+
+
 
 
 
@@ -611,8 +612,6 @@ background-color: field;
 
 .TwoColWithButton__Description {
     margin-top: 16px;
-    text-align: center;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.625;
     --tw-text-opacity: 1;
@@ -678,12 +677,10 @@ background-color: field;
 }
 
 .TwoColWithTwoHorizontalFeaturesAndButton__Feature {
-    margin-top: 40px;
+
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
-    align-items: center;
-    margin-right: 0px;
 }
 
 .SaaSProductLandingPage__Subheading {
@@ -899,6 +896,18 @@ ul {
     max-width: 448px;
 }
 
+.TwoColWithButton__ImageColumnTreactWebsitePOV {
+
+    position: relative;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 448px;
+}
+
+
+
 .TwoColWithButton__Container {
 
 position: relative;
@@ -915,6 +924,8 @@ position: relative;
 .TwoColWithButton__TextContent {
     
 }
+
+TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainer2 TwoColWithTwoHorizontalFeaturesAndButton__StyledFeatureIconContainer2
 
 
 
@@ -960,6 +971,26 @@ position: relative;
 
 
 
+.TwoColWithHorizontalFeaturesandButton__FeatureHeadingContainer {
+
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+
+}
+
+
+
+
+.TwoColWithHorizontalFeaturesAndButton__FeatureHeadingContainer2 {
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+
 
 .TwoColWithHorizontalFeaturesAndButton__Subheading {
     text-align: center;
@@ -967,6 +998,10 @@ position: relative;
     --tw-text-opacity: 1;
     color: rgb(100 21 255 / var(--tw-text-opacity));
 }
+
+
+
+
 
 .TwoColWithHorizontalFeaturesAndButton__Description {
     color: #7C8BA1;
@@ -1006,11 +1041,23 @@ position: relative;
 
 .TwoColWithHorizontalFeaturesandButton__FeatureDescription {
     margin-top: 16px;
-    text-align: center;
     line-height: 1.625;
     --tw-text-opacity: 1;
     color: rgb(113 128 150 / var(--tw-text-opacity));
 }
+
+
+.TwoColWithHorizontalFeaturesandButton__FeatureDescription2 {
+
+    margin-top: 16px;
+    line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgb(113 128 150 / var(--tw-text-opacity));
+
+}
+
+
+
 
 .TwoColWithTwoHorizontalFeaturesAndButton__PrimaryButton {
     margin-left: auto;
@@ -1165,9 +1212,6 @@ p {
 .ThreePlans__PlansContainer {
     position: relative;
     display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
@@ -1572,6 +1616,12 @@ p {
     color: #243E63;
     Font-size: 20px;
     font-weight: 700;
+}
+
+.PreTwoColWithHorizontalFeaturesAndButton__FeatureHeadingContainer {
+
+display: flex;
+
 }
 
 .TwoColumnWithImageAndRating__CustomerTitle {
@@ -2031,6 +2081,14 @@ transition-duration: 300ms;
         flex-direction: row;
     }
 
+    .TwoColWithTwoHorizontalFeaturesAndButton__Feature {
+
+   margin-top: 32px;
+
+    }
+
+
+
     .TwoColumnWithImageAndRating__Heading {
         font-size: 48px;
     }
@@ -2278,6 +2336,32 @@ transition-duration: 300ms;
         text-align: right;
      }
 
+     .TwoColWithTwoHorizontalFeaturesAndButton__Feature {
+
+        margin-top: 32px;
+        align-items: flex-start;
+
+     }
+
+
+     .TwoColWithButton__ImageColumnTreactWebsitePOV {
+
+        width: 50%;
+
+     }
+
+     .TwoColWithHorizontalFeaturesandButton__FeatureDescription {
+
+        text-align: left;
+     }
+
+
+     .TwoColWithHorizontalFeaturesandButton__FeatureDescription2 {
+
+
+
+     }
+
      .TwoColWithHorizontalFeaturesAndButton__Description {
         text-align: left;
      }
@@ -2303,6 +2387,12 @@ transition-duration: 300ms;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 32px;
+    }
+
+    .TwoColWithButton__TwoColumn {
+            flex-direction: row;
+            padding-top: 96px;
+            padding-bottom: 96px;
     }
 
      .TwoColWithTwoHorizontalFeaturesAndButton__PrimaryButton {
