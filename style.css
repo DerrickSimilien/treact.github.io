@@ -569,29 +569,19 @@ figure {
 }
 
 .TwoColWithButton__TwoColumn {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    max-width: 1280px;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
 
+.TwoColWithButton__StyledImageWholeContainer {
 
-
-
-.TwoColWithButton__StyledImage {
-    max-width: 100%;
-    height: auto;
-    margin: 16px 0px 0px;
-    border-radius: 4px;
-    border-width: 1px;
+/* max-width: 100%; */
 
 }
+
+
 
 .TwoColWithButton__Subheading {
     text-align: center;
@@ -897,31 +887,35 @@ ul {
 }
 
 .TwoColWithButton__ImageColumnTreactWebsitePOV {
-
-    position: relative;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative;
     margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 448px;
+    margin-right: auto; */
 }
 
 
 
 .TwoColWithButton__Container {
 
-position: relative;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
 .TwoColWithButton__StyledImage {
     border-radius: 4px;
     border-width: 1px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .TwoColWithButton__TextContent {
+
+    max-width: 40%;
     
 }
 
