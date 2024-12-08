@@ -2365,11 +2365,34 @@ blockquote {
 }
 
 .TwoColumnWithInput__TwoColumn {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+/* .TwoColWithButton__StyledImageWholeContainer {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.TwoColWithButton__StyledImage {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.TwoColWithSteps__ContainerWrapper {
 
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
 }
 
 
