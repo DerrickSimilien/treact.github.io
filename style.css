@@ -2508,9 +2508,10 @@ align-items: center;
      }
 
      .TwoColumnWithImageAndRating__Image {
-
-        width: 60%;
+/* 
+        width: 60%; */
         /* align-items: center; */
+
 
      }
 
@@ -2536,6 +2537,23 @@ align-items: center;
      .TwoColWithButton__Heading {
 
         text-align: center;
+
+     }
+
+     .TwoColumnWithInput__IllustrationContainer {
+
+
+        align-items: center;
+        display: flex;
+
+     }
+
+
+     .TwoColumnWithInput___StyledImg {
+
+        width: 90%;
+        align-items: center;
+
 
      }
 
@@ -2567,6 +2585,15 @@ align-items: center;
 
      }
 
+
+.TwoColumnWithImageAndRating__CustomerName {
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
      .TwoColWithHorizontalFeaturesAndButton__Description {
         text-align: center;
      }
@@ -2587,7 +2614,7 @@ align-items: center;
 
      .TwoColumnWithImageAndRating__Description {
         text-align: center;
-        width: 70%;
+        /* width: 70%; */
      }
 
      .TwoColWithButton__PrimaryButton {
@@ -2615,6 +2642,8 @@ align-items: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
 
     }
 
@@ -2637,7 +2666,8 @@ align-items: center;
 
     .TwoColWithSteps__Image {
 
-        width: 100%;
+        width: 60%;
+        align-items: center;
 
     }
 
@@ -2673,9 +2703,9 @@ align-items: center;
     }
 
     .TwoColWithSteps__TwoColumn {
-        flex-direction: row;
+        flex-direction: column;
         padding-top: 96px;
-        padding-bottom: 96px;
+        padding-bottom: 75px;
     }
 
     .TwoColumnWithInput__TwoColumn {
