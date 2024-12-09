@@ -215,7 +215,7 @@
 }
 
 .nlb--var-2 {
-    right: 0px;
+    /* right: 0px;
     top: 0px;
     bottom: 0px;
     border-radius: 9999px;
@@ -230,13 +230,34 @@
     padding-bottom: 16px;
     padding-top: 16px;
     font-weight: 700;
-    --tw-text-opacity: 1;
-    background: #6415ff;
-    color: rgb(247 250 252 / var(--tw-text-opacity));
+    --tw-text-opacity: 1; */
+    background-color: #6415ff;
+    /* color: rgb(247 250 252 / var(--tw-text-opacity));
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
-    appearance: button;
+    appearance: button; */
+    border: none;
+    padding: 8px 32px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    
 }
+
+
+.ButtonNo2 {
+    background-color: #6415ff;
+    border: none;
+    margin-top: 10px;
+    padding: 8px 32px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    visibility: hidden;
+    text-align: center;
+}
+
+
 
 .nlb--var-2:hover {
     text-decoration: none;
@@ -385,10 +406,29 @@ font: 16px Inter, system-ui;
 }
 
 
+.InputButtonArea {
+
+border: none;
+padding: 8px 20px;
+border-radius: 25px;
+
+
+
+}
+
+
 .TwoColumnWithInput__Actions {
-    position: relative;
-    max-width: 448px;
-    text-align: center;
+    /* position: relative; */
+    /* max-width: 448px; */
+    /* text-align: center; */
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 4px;
+border: 2px solid gray;
+border-radius: 25px;
+
 }
 
 input {
@@ -1636,7 +1676,7 @@ p {
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
     max-width: 448px;
 }
 
@@ -2466,6 +2506,13 @@ align-items: center;
 
      }
 
+     .TwoColumnWithImageAndRating__Image {
+
+        width: 60%;
+        /* align-items: center; */
+
+     }
+
      .TwoColWithSteps__TextContent {
 
         display: flex;
@@ -2560,7 +2607,10 @@ align-items: center;
     }
 
     .TwoColumnWithImageAndRating__Row {
-        flex-direction: row;
+        /* flex-direction: row; */
+
+        flex-direction: column;
+        justify-content: center;
 
     }
 
@@ -2640,6 +2690,16 @@ align-items: center;
 
     }
 
+    .nlb--var-2 {
+        display: none;
+    } 
+
+    .ButtonNo2 {
+
+        visibility: visible;
+        
+    }
+
     .FiveColumnWithBackground__FiveColumns {
         -webkit-box-pack: justify;
         justify-content: space-between;
@@ -2683,13 +2743,7 @@ align-items: center;
         text-align: left;
     } */
 
-    .nlb--var-2 {
-        position: absolute;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        width: 160px;
-        line-height: 1;
-    } 
+
 
     .ThreeColWithSideImage__Heading {
         font-size: 48px;
