@@ -518,13 +518,13 @@ background-color: field;
 
 
 
-.SaaSProductLandingPage__Subheading {
+/* .SaaSProductLandingPage__Subheading {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     --tw-text-opacity: 1;
     color: rgb(100 21 255 / var(--tw-text-opacity));
-}
+} */
 
 .ThreeColWithSideImage__Subheading {
     margin-bottom: 16px;
@@ -762,13 +762,13 @@ figure {
     -webkit-box-align: center;
 }
 
-.SaaSProductLandingPage__Subheading {
+/* .SaaSProductLandingPage__Subheading {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     --tw-text-opacity: 1;
     color: rgb(100 21 255 / var(--tw-text-opacity));
-}
+} */
 
 .TwoColWithButton___StyledSpan {
     --tw-text-opacity: 1;
@@ -1046,13 +1046,13 @@ TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainer2 TwoColWithTwoHor
 
 
 
-.SaaSProductLandingPage__Subheading {
+/* .SaaSProductLandingPage__Subheading {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     --tw-text-opacity: 1;
     color: rgb(100 21 255 / var(--tw-text-opacirty));
-}
+} */
 
 .TwoColWithTwoHorizontalFeaturesAndButton__Image {
     border-radius: 4px;
@@ -1672,10 +1672,10 @@ p {
 
 
 .TwoColumnWithImageAndRatingColumn__TwoColumnWithImageAndRatingImageColumn {
-    position: relative;
-    flex-shrink: 0;
-    margin-left: auto;
-    margin-right: auto;
+    /* position: relative;
+    flex-shrink: 0; */
+    /* margin-left: auto;
+    margin-right: auto; */
     width: 80%;
     max-width: 448px;
 }
@@ -1788,7 +1788,7 @@ display: flex;
     max-width: 100%;
     height: auto;
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .TwoColumnWithImageAndRating__ControlButton {
@@ -2460,16 +2460,17 @@ align-items: center;
         text-align: left;
      }
 
-     .TwoColumnWithImageAndRating__Column, .TwoColumnWithImageAndRating__TextColumn {
+     .TwoColumnWithImageAndRating__Column {
         /* order: 9999;
         margin-top: 0px;
         width: 58.3333%;
         margin-right: 0px;
         margin-left: 0px; */
-        max-width: none;
+        /* max-width: none; */
         text-align: center;
         justify-content: center;
         flex-direction: column;
+        display: flex;
      }
 
      .TwoColWithSteps__TwoColumnYes {
@@ -2575,16 +2576,18 @@ align-items: center;
         margin-left: 0px;
      }
 
-     .TwoColumnWithImageAndRating__Subheading {
+     /* .TwoColumnWithImageAndRating__Subheading {
         text-align: left;
-     }
+     } */
 
      .TwoColumnWithImageAndRating__Heading {
-        text-align: left;
+        text-align: center;
+        font-size: 50px;
      }
 
      .TwoColumnWithImageAndRating__Description {
-        text-align: left;
+        text-align: center;
+        width: 70%;
      }
 
      .TwoColWithButton__PrimaryButton {
@@ -2611,6 +2614,7 @@ align-items: center;
 
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
     }
 
@@ -2638,10 +2642,10 @@ align-items: center;
     }
 
     .TwoColumnWithImageAndRatingColumn__TwoColumnWithImageAndRatingImageColumn {
-        /* width: 41.6667%; */
-        margin-left: 0px;
-        margin-right: 0px;
-        max-width: 100%;
+        width: 100%;
+        /* in-left: 0px;
+        margin-right: 0px;marg */
+        /* max-width: 100%; */
         flex-direction: column;
         align-items: center;
         justify-content: center;
