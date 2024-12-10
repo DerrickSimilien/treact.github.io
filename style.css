@@ -1031,8 +1031,9 @@ ul {
 .TwoColWithButton__StyledImage {
     border-radius: 4px;
     border-width: 1px;
-    width: 100%;
+    width: 90%;
     height: auto;
+    padding-left: 90px;
 }
 
 .TwoColWithButton__TextContent {
@@ -1708,6 +1709,15 @@ p {
     margin-top: 40px;
     width: 100%;
 }
+
+.TwoColumnWithImageAndRating__Column {
+
+
+
+
+}
+
+
 
 .slick-list {
     margin: 0;
@@ -2812,6 +2822,22 @@ align-items: center;
         margin-bottom: 40px;
     }
 
+    .TwoColWithSteps__Image {
+
+        width: 100%;
+    }
+
+    /* .TwoColWithButton__StyledImageWholeContainer {
+
+        width: 100%;
+
+    } */
+
+    .TwoColWithButton__StyledImage {
+
+        width: 100%;
+    }
+
 
     .FiveColumnWithBackgroundColumn__Heading {
         text-align: left;
@@ -2831,9 +2857,72 @@ align-items: center;
          padding-right: 0px;  
        }
 
+       .GetStarted__Row {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+       }
+
+       .FiveColumnWithBackground__ThreeColRow {
+
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+
+
+       }
+
+    .FiveColumnChildrenWrapper {
+
+        margin-bottom: 20px;
+
+
+
+    }
+    
+    .TwoColWithTwoHorizontalFeaturesAndButton__Feature {
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+       .FiveColumnEithBackground__Column {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+       }
+
+       .TwoColumnWithInput__LeftColumn {
+
+        width: 100%;
+
+       }
+
+       .GetStarted__ColumnContainerGetStarted__LinksContainer {
+
+        margin-top: 10px;
+
+
+
+       }
+
+       .TwoColWithTwoHorizontalFeaturesAndButton__Features {
+
+        flex-direction: column;
+
+       }
+
        .FiveColumnWithBackground__CopywrightNotice {
         font-size: 16px;
         text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
        }
 
       }
