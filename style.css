@@ -705,6 +705,8 @@ figure {
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
+    align-items: center;
+    display: flex;
     display: inline-block;
     font-size: 14px;
     border-radius: 9999px;
@@ -749,6 +751,7 @@ figure {
     line-height: 1.625;
     --tw-text-opacity: 1;
     color: rgb(124 139 161 / var(--tw-text-opacity));
+    padding-bottom: 19px;
 }
 
 .TwoColWithTwoHorizontalFeaturesAndButton__Features {
@@ -840,6 +843,7 @@ figure {
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 8px;
+    margin-left: 20px;
 } 
 
 /* .TwoColWithSteps__StepDescription {
@@ -906,6 +910,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bid: isolate;
+    margin-bottom: 15px;
 }
 
 
@@ -920,7 +925,7 @@ ul {
 .TwoColWithSteps__StepDescription {
     margin-top: 12px;
     max-width: 320px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 2;
     --tw-text-opacity: 1;
@@ -1129,7 +1134,7 @@ text-align: left;
 
 .TwoColWithHorizontalFeaturesAndButton__Description {
     color: #7C8BA1;
-    font-size: 14px;
+    font-size: 16px;
     margin: 32px 0px 0px;
 }
 
@@ -1303,7 +1308,7 @@ a {
    width: 100%;
    text-align: center;
    margin-top: 16px;
-   font-size: 14px;
+   font-size: 18px;
    font-weight: 500;
    line-height: 1.625;
    --tw-text-opacity: 1;
@@ -1668,6 +1673,7 @@ p {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 
@@ -1702,6 +1708,7 @@ p {
     line-height: 1.625;
     --tw-text-opacity: 1;
     color: rgb(124 139 161 / var(--tw-text-opacity));
+    align-items: center;
 }
 
 
@@ -1744,6 +1751,18 @@ p {
     font-weight: 500;
     line-height: 1.625;
     color: rgb(74 85 104);
+    text-align: center;
+    /* flex-direction: column; */
+}
+
+.TwoColumnWithImageAndRating__Controls {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ margin-bottom: 10px;
+
 }
 
 .TwoColumnWithImageAndRating__TestimonialHeading {
@@ -1751,6 +1770,8 @@ p {
     font-size: 20px;
     color: #243E63;
     font-weight: 700;
+    text-align: center;
+    /* justify-content: center; */
 }
 
 
@@ -1771,12 +1792,15 @@ p {
     width: 64px;
     border-radius: 9999px;
     max-width: 100%;
+    
  }
 
 .TwoColumnWithImageAndRating__CustomerName {
     color: #243E63;
     Font-size: 20px;
     font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .PreTwoColWithHorizontalFeaturesAndButton__FeatureHeadingContainer {
@@ -1810,6 +1834,7 @@ display: flex;
     color: rgb(100 21 255);
     transition-property: background-color, border-color,color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
+    /* align-items: center; */
 }
 
 .TwoColumnWithImageAndRating__ControlButton2 {
@@ -1854,14 +1879,16 @@ display: flex;
 }
 
 .SingleCol__Description {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     margin-top: 16px;
-    max-width: 576px;
+    font-size: 19px;
+    font-weight: 400;
+    /* max-width: 576px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.625;
-    --tw-text-opacity: 1;
+    --tw-text-opacity: 1; */
     color: #2D3748;
 }
 
@@ -2008,7 +2035,7 @@ align-items: center;
 background-color: transparent;
 padding: 16px 32px;
 border-radius: 100px;
-border: 1px solid gray;
+border: 1px solid white;
 
 }
 
@@ -2806,11 +2833,31 @@ align-items: center;
         font-size: 16px  
       }
 
+      .description {
+
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+
+      }
+
       .GetStarted__Link2, .GetStarted__SecondaryLink {
 
         margin-right: 0px;
         width: auto;
         font-size: 16px;
+    }
+
+    .InputButtonArea {
+
+        text-align: center;
+
+    }
+
+    .title {
+
+        text-align: center;
+        justify-content: center;
     }
 
       .GetStarted__Link2, .GetStarted__SecondaryLink: last-child {
@@ -2820,11 +2867,39 @@ align-items: center;
 
     .TwoColumnWithImageAndRating__Quote {
         margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .TwoColumnWithImageAndRating__CustomerName {
+
+        margin-left: 5px;
+        margin-right: 5px;
+        /* flex-direction: column; */
+
+    }
+
+    figure {
+
+        flex-direction: column;
+        /* justify-content: center; */
+
+    }
+
+    .ThreeColumnWithSideImage__Description {
+
+        font-size: 20px;
+
     }
 
     .TwoColWithSteps__Image {
 
         width: 100%;
+    }
+
+    .TwoColumnWithInput__Heading {
+
+        align-items: center;
+
     }
 
     /* .TwoColWithButton__StyledImageWholeContainer {
@@ -2865,6 +2940,7 @@ align-items: center;
 
        }
 
+       
        .FiveColumnWithBackground__ThreeColRow {
 
         flex-direction: column;
@@ -2901,6 +2977,15 @@ align-items: center;
        .TwoColumnWithInput__LeftColumn {
 
         width: 100%;
+
+       }
+
+       .TwoColWithHorizontalFeaturesandButton__FeatureDescription2 {
+
+        text-align: center;
+        justify-content: center;
+        /* flex-direction: column; */
+
 
        }
 
