@@ -1468,6 +1468,7 @@ p {
 .ThreePlans__BuyNowButton {
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     width: 100%;
+    max-width: 240px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     border-radius: 9999px;
     padding-top: 16px;
@@ -1583,6 +1584,8 @@ p {
     border-radius: 9999PX;
     font-weight: bold;
     text-transform: uppercase;
+    width: 100%;
+    max-width: 240px;
 }
 
 .ThreePlans__BuyNowButton--Business:hover {
@@ -1668,6 +1671,8 @@ p {
     border-radius: 9999PX;
     font-weight: bold;
     text-transform: uppercase;
+    width: 100%;
+    max-width: 240px;
 }
 
 .ThreePlans__BuyNowButton--Enterprise:hover {
