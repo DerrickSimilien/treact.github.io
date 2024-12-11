@@ -565,7 +565,7 @@ background-color: field;
     text-align: center;
     margin-top: 16px;
     max-width: 60%;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.625;
     --tw-text-opacity: 1;
@@ -705,6 +705,7 @@ figure {
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
+    /* margin: 0 auto; */
     align-items: center;
     display: flex;
     display: inline-block;
@@ -854,6 +855,9 @@ figure {
     margin-top: 48px;
     margin: 0px;
     padding: 0px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 ul {
@@ -861,6 +865,7 @@ ul {
  margin: 0px;
  padding: 0px;
  display: block;
+justify-content: center;
  margin-block-start: 16px;
  margin-block-end: 16px;
  margin-inline-start: 0px;
