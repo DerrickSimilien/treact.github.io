@@ -1726,6 +1726,7 @@ p {
     --tw-text-opacity: 1;
     color: rgb(124 139 161 / var(--tw-text-opacity));
     align-items: center;
+    /* flex-direction: column; */
 }
 
 
@@ -1884,7 +1885,7 @@ display: flex;
     border-width: 0px;
     border-style: solid;
     border-color: rgb(226, 232, 240);
-    background-color: #ffb115;
+    /* background-color: #ffb115; */
 }
 
 .SingleCol__Subheading {
@@ -1913,50 +1914,59 @@ display: flex;
     position: relative;
     margin-top: 48px;
     max-width: 896px;
-    /* border-radius: 25000px; */
-    display:block;
-    border: 5px solid blue;
+    border-radius: 9999px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px solid blue; */
     margin-block-start: 16px;
     margin-block-start: 16px;
     margin-inline-start: 0px;
-    background-color: #ffb115;
+    /* background-color: #ffb115; */
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
 
 .SingleCol__Question {
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
+    /* -webkit-box-align: center; */
+    text-align: center;
+    /* align-items: center; */
     -webkit-box-pack: justify;
     justify-content: space-between;
     padding-top: 8px;
+    /* border-radius: 9999px; */
 }
 
 
 .SingleCol__FAQ {
-    margin-top: 20px;
+    margin-top: 30px;
     cursor: pointer;
     user-select: none;
-    border-radius: 8px;
+    border-radius: 999px;
     --tw-bg-opacity: 1;
-    background-color: rgb(237 242 247 / var (--tw-bg-opacity));
-    padding: 20px 32px;
+    /* background-color: grey;  */
+    background-color: lightgrey;
+    padding: 20px 30px;
     --tw-text-opacity: 1;
     color: rgb(45 55 72 / var(--tw-text-opacity));
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
 }
 
-.SingleCol__QuestionText {
+/* .SingleCol__QuestionText {
     font-size: 18px;
     font-weight: 600;
-}
+} */
 
 .SingleCol__QuestionText {
     font-weight: bold;
     display: flex;
-    padding-top: 10%;
+    padding-top: 5%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    /* align-items: center; */
 }
 
 /* NEXT SECTION */
@@ -2031,17 +2041,18 @@ margin-right: 10px;
 
 }
 
-.underlineforseperation {
+/* .underlineforseperation {
 
 border: 2px solid blue;
 
-}
+} */
 
 .SingleCol__Answer {
 
 padding-top: 10px;
 padding-bottom: 10px;
-align-items: center;
+/* align-items: center; */
+text-align: center;
 
 }
 
