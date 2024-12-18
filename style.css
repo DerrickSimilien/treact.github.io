@@ -1721,11 +1721,15 @@ p {
 
 .TwoColumnWithImageAndRating__Description {
     margin-top: 24px;
+    text-align: left;
     font-weight: 500;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
     line-height: 1.625;
     --tw-text-opacity: 1;
     color: rgb(124 139 161 / var(--tw-text-opacity));
-    align-items: center;
+    /* align-items: center; */
     /* flex-direction: column; */
 }
 
@@ -1735,12 +1739,12 @@ p {
     width: 100%;
 }
 
-.TwoColumnWithImageAndRating__Column {
+/* .TwoColumnWithImageAndRating__Column {
 
 
 
 
-}
+} */
 
 
 
@@ -1769,7 +1773,7 @@ p {
     font-weight: 500;
     line-height: 1.625;
     color: rgb(74 85 104);
-    text-align: center;
+    text-align: left;
     /* flex-direction: column; */
 }
 
@@ -1933,8 +1937,8 @@ display: flex;
     text-align: center;
     /* align-items: center; */
     -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding-top: 8px;
+    justify-content: center;
+    padding-top: 15px;
     /* border-radius: 9999px; */
 }
 
@@ -1962,7 +1966,7 @@ display: flex;
 .SingleCol__QuestionText {
     font-weight: bold;
     display: flex;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     font-size: 18px;
     font-weight: 600;
     text-align: center;
@@ -2324,6 +2328,14 @@ blockquote {
     .TwoColWithSteps__TextContent {
         padding-top: 32px;
         padding-bottom: 32px;
+    }
+
+
+    .TwoColumnWithImageAndRating__Column {
+
+        padding-left: 64px;
+
+
     }
 
 
