@@ -376,6 +376,7 @@ transition-duration: 300ms;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
 }
 
 .TwoColumnWithInput__TwoColumn {
@@ -428,7 +429,7 @@ justify-content: space-between;
 padding: 4px;
 border: 2px solid gray;
 border-radius: 25px;
-
+width: 80%;
 }
 
 input {
@@ -1723,9 +1724,10 @@ p {
     margin-top: 24px;
     text-align: left;
     font-weight: 500;
-    display: flex;
+    width: 70%;
+    /* display: flex; */
     font-size: 18px;
-    flex-direction: column;
+    /* flex-direction: column; */
     line-height: 1.625;
     --tw-text-opacity: 1;
     color: rgb(124 139 161 / var(--tw-text-opacity));
@@ -1739,12 +1741,14 @@ p {
     width: 100%;
 }
 
-/* .TwoColumnWithImageAndRating__Column {
+.TwoColumnWithImageAndRating__Column {
 
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 
-
-
-} */
+} 
 
 
 
@@ -1770,6 +1774,8 @@ p {
 
 .TwoColumnWithImageAndRating__Quote {
     margin-top: 16px;
+    font-size: 18px;
+    width: 70%;
     font-weight: 500;
     line-height: 1.625;
     color: rgb(74 85 104);
@@ -1788,7 +1794,7 @@ p {
 }
 
 .TwoColumnWithImageAndRating__TestimonialHeading {
-    margin: 16px;
+    /* margin: 16px; */
     font-size: 20px;
     color: #243E63;
     font-weight: 700;
@@ -1841,7 +1847,8 @@ display: flex;
 
 .TwoColumnWithImageAndRating__Image {
     border-radius: 4px;
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 150%;
     height: auto;
     display: block;
     /* vertical-align: middle; */
@@ -2259,6 +2266,23 @@ blockquote {
 }
 
 
+@media (max-width: 1200px) {
+
+.TwoColumnWithImageAndRating__Row {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+}
+
+
+}
+
+
 
 @media (max-width: 1024px) {
 
@@ -2333,7 +2357,7 @@ blockquote {
 
     .TwoColumnWithImageAndRating__Column {
 
-        padding-left: 64px;
+        /* padding-left: 64px; */
 
 
     }
@@ -2461,6 +2485,7 @@ blockquote {
   }
 
 
+
   @media (max-width: 980px) {
 
     .ThreeColWithSideImage__Card {
@@ -2468,6 +2493,59 @@ blockquote {
         width: calc(100%/2) ;
 
     }
+
+    .TwoColumnWithImageAndRating__Column {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .TwoColumnWithImageAndRating__Description {
+
+        width: 100%;
+
+    }
+
+    .TwoColumnWithImageAndRating__Image {
+
+        width: 100%;
+
+    }
+
+    .TwoColumnWithImageAndRating__Subheading {
+
+        text-align: center;
+
+    }
+
+    .SaaSProductLandingPage__Subheading {
+
+        text-align: center;
+        /* display: flex; */
+        
+
+
+    }
+
+    .TwoColumnWithInput__Actions {
+
+        width: 100%;
+
+    }
+
+
+    .TwoColumnWithImageAndRating__Column {
+
+
+        align-items: center;
+
+    }
+
+    
+    .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
+        text-align: center;
+     }
 
   }
 
@@ -2479,7 +2557,10 @@ blockquote {
     display: none;
 
 
-    }
+    } 
+
+
+    
 
 .burgermenu {
 
@@ -2534,9 +2615,9 @@ align-items: center;
     }
 
     
-    .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
+    /* .TwoColWithTwoHorizontalFeaturesAndButton__TextContent {
         text-align: left;
-     }
+     } */
 
      .TwoColumnWithImageAndRating__Column {
         /* order: 9999;
@@ -2680,6 +2761,7 @@ align-items: center;
         margin-right: 0px;
         margin-left: 0px;
      }
+
 
      /* .TwoColumnWithImageAndRating__Subheading {
         text-align: left;
@@ -2912,6 +2994,7 @@ align-items: center;
     .TwoColumnWithImageAndRating__Quote {
         margin-bottom: 40px;
         font-size: 16px;
+        width: 100%;
     }
 
     .TwoColumnWithImageAndRating__CustomerName {
@@ -2949,7 +3032,7 @@ align-items: center;
 
     .TwoColWithButton__StyledImageWholeContainer {
 
-        width: 80%;
+        width: 100%;
 
     }
 
