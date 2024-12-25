@@ -1586,8 +1586,8 @@ p {
     display: flex;
     flex: 1 1 0%;
     flex-direction: column;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     /* border-top-width: 2px;
     border-bottom-width: 2px; */
     padding: 32px;
